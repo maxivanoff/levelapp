@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+    <h1>YES! You did it. Enjoy.</h1>
+
+    </li><a href="{% url 'level:download_levels_pdf' findex %}">Download PDF file with energy levels</a></li>
+    </br>
+    </li><a href="{% url "level:index" %}">Repeat experience</a></li>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+# UNIX shell ‘rlev’ to execute the compiled version of program LEVEL named
+# lev.x, which is stored in the user’s directory /upath/ with input data
+# file $1.5, and write output to $1.6, $1.7, etc. all in the current
+# directory.
+#
+time ./lev.x < $1 > $1.6
+mv fort.7 $1.7 >& /dev/null
+mv fort.8 $1.8 >& /dev/null
+mv fort.9 $1.9 >& /dev/null
+mv fort.10 $1.10 >& /dev/null
